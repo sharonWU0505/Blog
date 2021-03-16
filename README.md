@@ -1,2 +1,3 @@
-# Blog
-My Blog!
+# My Blog!
+
+Built by Hugo

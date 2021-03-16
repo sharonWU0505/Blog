@@ -1,0 +1,8 @@
+html {
+  --theme: #34a5c7 !important;
+}
+
+
+.button {
+  background-color: var(--theme) ;
+}
