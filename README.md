@@ -1,3 +1,3 @@
 # My Blog!
 
-Built by Hugo
+Built by Hugo and theme
