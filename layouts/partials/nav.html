@@ -25,23 +25,19 @@
       <a class="nav-link{{if $active }} active{{end}}" href="{{ $url }}"><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
     </li>
     {{- end }}
-    {{ $repo := $sp.source }}
+    {{ $sites := $sp.sites }}
+    {{ range $sites }}
     <li class="nav-item nav_repo">
-      <a class="nav-link" href="{{ $repo.url }}" target="_blank">
-        {{ if $repo.iconLight }}
-          {{- $litPath := absURL ($repo.iconLight) }}
-          {{- $darkPath := absURL ($repo.iconDark) }}
-          <picture data-lit="{{ $litPath }}" data-dark="{{ $darkPath }}">
-            {{ with $sp.enableDarkMode }}
-              <source srcset = '{{ $darkPath }}' media="(prefers-color-scheme: dark)">
-            {{ end }}
-            <img srcset = '{{ $litPath }}' alt = '{{ $repo.name }} Repo'>
-          </picture>
+      <a class="nav-link" href="{{ .url }}" target="_blank" style="padding: 0.5rem">
+        {{ if .icon }}
+          {{- $logoPath := absURL (.icon) }}
+          <img src='{{ $logoPath }}' alt='{{ .name }} Site' style="background-color: #fff; padding: 3px; height: 27px;">
         {{ else }}
-          {{ $repo.name }}
+          {{ .name }}
         {{ end }}
       </a>
     </li>
+    {{ end }}
     <li class="nav-item">{{ partial "mode" . }}</li>
   </ul>
 </nav>

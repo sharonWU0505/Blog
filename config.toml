@@ -18,6 +18,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   weight = 2
   url = "articles/"
 
+[[menu.main]]
+  name = "About Me"
+  weight = 4
+  url = "about/"
+
 # [[menu.main]]
 #   name = "Example"
 #   weight = 3
@@ -49,7 +54,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
 
   repo = "https://github.com/sharonWU0505"
-
+  mainSections = ["articles"]
+  mobileNavigation = "left"
+  numberOfTagsShown = 14
   time_format_blog = "Monday, January 02, 2006"
   time_format_default = "January 2, 2006"
   enableDarkMode = true # set to false to disable darkmode by default # user will still have the option to use dark mode
@@ -67,15 +74,18 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     lightMode = "images/compose.svg"
     darkMode = "images/compose-light.svg"
 
-  [params.source]
+  [[params.sites]]
     name = "GitHub"
-    iconLight = "images/GitHubMarkLight.svg"
-    iconDark = "images/GitHubMarkDark.svg"
+    icon = "images/logo-github.svg"
     url = "https://github.com/sharonWU0505"
+
+  [[params.sites]]
+    name = "Medium"
+    icon = "images/logo-medium.svg"
+    url = "https://medium.com/@ronronn"
 
   # optional
   # attribution. Feel free to delete this
   [params.author]
     name = "Sharon Wu"
     url = "https://github.com/sharonWU0505"
-
