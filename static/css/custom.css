@@ -2,7 +2,25 @@ html {
   --theme: #34a5c7 !important;
 }
 
-
 .button {
-  background-color: var(--theme) ;
+  background-color: var(--theme);
+}
+
+@media screen and (max-width: 992px) {
+  .nav {
+    padding: 1.2rem 0.4rem 1.2rem 1.2rem !important;
+  }
+
+  html[data-mode="dark"] .nav.show .nav_body {
+    background: var(--accent);
+  }
+
+  .nav_repo {
+    justify-content: flex-start;
+    padding: 0 0.5rem;
+  }
+
+  .nav_repo img {
+    margin: 0;
+  }
 }

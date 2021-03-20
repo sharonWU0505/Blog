@@ -1,14 +1,10 @@
 {{ if .Site.Params.enableCopyright | default true }}
-<footer class="pt-2 pb-1">
+<footer class="pt-2" style="min-height: 100px">
   <div class="wrap">
     {{- $author := site.Params.author }}
-    <p>
+    <p style="padding: 0">
       &copy; <span class="year">{{ now.Year }}</span>{{ with $author }}
-      <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ end }}
-    </p>
-    <p style="font-size: 14px; padding: 0; margin: 0">
-      This blog uses the Hugo theme:
-      <a href="https://github.com/onweru/compose" target="_blank">Compose</a>
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ end }}
     </p>
   </div>
 </footer>
