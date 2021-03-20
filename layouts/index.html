@@ -1,0 +1,18 @@
+{{- define "main" }}
+<div class="content">
+  {{ .Content }}
+
+  <main>
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range first 10 $pages }}
+    <a href="{{ .Permalink | relURL }}">
+      <section class="post-section">
+        <h3>{{ .Title }}</h3>
+        <div>{{ dateFormat "2006-01-02" .Lastmod }}</div>
+        <p>{{ .Summary | safeHTML }}</p>
+      </section>
+    </a>
+    {{ end }}
+  </main>
+</div>
+{{- end }}

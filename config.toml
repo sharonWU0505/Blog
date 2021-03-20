@@ -53,9 +53,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   repo = "https://github.com/sharonWU0505"
-  # mainSections = ["articles"]
-  # mobileNavigation = "left"
-  # numberOfTagsShown = 14
+  mainSections = ["posts"]
+  mobileNavigation = "left"
+  numberOfTagsShown = 14
   time_format_blog = "Monday, January 02, 2006"
   time_format_default = "January 2, 2006"
   enableDarkMode = true # set to false to disable darkmode by default # user will still have the option to use dark mode
