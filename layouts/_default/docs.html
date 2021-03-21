@@ -29,9 +29,9 @@
         <h4>{{ $year }}</h4>
         <ul class="posts__listWrapper">
           {{ range $pages }}
-            {{ if eq (dateFormat "2006" .Lastmod) $year }}
+            {{ if eq (dateFormat "2006" .Date) ($year) }}
               <li class="posts__listLink">
-                <span>{{ dateFormat "2006-01-02" .Lastmod }}</span>
+                <span>{{ dateFormat "2006-01-02" .Date }}</span>
                 <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
               </li>
             {{ end }}
