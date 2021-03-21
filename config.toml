@@ -1,4 +1,4 @@
-baseURL = "./"
+baseURL = "/"
 title = "Sharon's Blog"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
@@ -74,17 +74,17 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
   # Site logo
   [params.logo]
-    lightMode = "images/compose.svg"
-    darkMode = "images/compose-light.svg"
+    lightMode = "/images/compose.svg"
+    darkMode = "/images/compose-light.svg"
 
   [[params.sites]]
     name = "GitHub"
-    icon = "images/logo-github.svg"
+    icon = "/images/logo-github.svg"
     url = "https://github.com/sharonWU0505"
 
   [[params.sites]]
     name = "Medium"
-    icon = "images/logo-medium.svg"
+    icon = "/images/logo-medium.svg"
     url = "https://medium.com/@ronronn"
 
   # optional
