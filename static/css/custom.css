@@ -1,12 +1,60 @@
 html {
-  --theme: #5cbfdd !important;
+  --theme: #2eb2db !important;
+  --hover: #4fc4e7 !important;
+  --info: #8d8d8d !important;
+  --link: #2385a4 !important;
+  --link-hover: #3094b3 !important;
 }
 
 .button {
   background-color: var(--theme);
 }
 
+h1 {
+  font-size: 180%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 155%;
+}
+
+h3 {
+  font-size: 130%;
+}
+
+blockquote p {
+  padding: 0;
+}
+
+/* Adjust content grid */
+.main > .grid-auto {
+  grid-template-columns: 2fr 6fr;
+}
+
+#docs-posts > h3 {
+  margin-top: 20px;
+}
+
+/* Adjust post next/prev button */
+.pager_link {
+  font-size: 16px;
+}
+
+.pager_label {
+  max-width: 80%;
+  width: 80%;
+}
+
+.pager_link::after,
+.pager_link::before {
+  width: 15px;
+  height: 12px;
+  background-size: unset;
+}
+
 @media screen and (max-width: 992px) {
+  /* Fix sidebar and content styles */
   .nav {
     padding: 1.2rem 0.4rem 1.2rem 1.2rem !important;
   }
@@ -23,19 +71,22 @@ html {
   .nav_repo img {
     margin: 0;
   }
-}
 
-.post-section {
-  padding-bottom: 20px;
-  margin: 30px 0;
-  border-bottom: 1px solid #d7e4e9;
-}
+  /* Adjust content grid */
+  .content {
+    margin-top: -3rem;
+  }
 
-.post-section p {
-  color: var(--text);
-}
+  .main > .grid-auto {
+    grid-template-columns: unset;
+  }
 
-.post-section div {
-  font-size: 14px;
-  color: #1685b1;
+  /* Adjust grid and aside */
+  .main > .grid-auto > .aside {
+    display: none;
+  }
+
+  .main > .grid-auto > .content {
+    margin-top: -1rem;
+  }
 }

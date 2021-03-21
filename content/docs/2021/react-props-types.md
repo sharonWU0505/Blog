@@ -4,10 +4,11 @@ date: "2021-03-20T19:00:00+08:00"
 draft: false
 slug: "react-props-types"
 ---
-
 ### Using propTypes
 * Reference: [Validating React Component Props with prop-types](https://blog.logrocket.com/validating-react-component-props-with-prop-types-ef14b29963fc/)
 * Note that, propTypes type-checking only happens in **development mode**, enabling you to catch bugs in your React application while developing. For performance reasons, it is not triggered in production environment.
+
+<!--more--> 
 
 ##### Installation
 ```

@@ -14,9 +14,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 #  menu items
 [[menu.main]]
-  name = "Articles"
+  name = "Posts"
   weight = 2
-  url = "articles/"
+  url = "docs/"
 
 [[menu.main]]
   name = "About Me"
@@ -53,7 +53,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   repo = "https://github.com/sharonWU0505"
-  mainSections = ["posts"]
+  mainSections = ["docs"]
   mobileNavigation = "left"
   numberOfTagsShown = 14
   time_format_blog = "Monday, January 02, 2006"
@@ -66,7 +66,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   # disable showing line numbers by default. Switch to `true` if you'd rather have them on.
   codeLineNumbers = false
 
-  customCSS = ["/css/custom.css"]
+  customCSS = ["/css/custom.css", "/css/index-post.css"]
 
   # Site logo
   [params.logo]

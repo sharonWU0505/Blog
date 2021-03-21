@@ -2,7 +2,7 @@
 <footer class="pt-2" style="min-height: 100px">
   <div class="wrap">
     {{- $author := site.Params.author }}
-    <p style="padding: 0">
+    <p style="padding: 0; font-size: 14px;">
       &copy; <span class="year">{{ now.Year }}</span>{{ with $author }}
       <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{ end }}
     </p>
