@@ -24,9 +24,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   url = "about/"
 
 # [[menu.main]]
-#   name = "Example"
+#   name = "Tags"
 #   weight = 3
-#   url = "https://docs.neuralvibes.com"
+#   url = "tags/"
 
 [markup]
   [markup.goldmark]
@@ -49,8 +49,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     ordered = false
     startLevel = 2
 
-# Everything below this are Site Params
+# [taxonomies]
+#   tag = "tags"
 
+# Everything below this are Site Params
 [params]
   repo = "https://github.com/sharonWU0505"
   mainSections = ["docs"]
@@ -66,7 +68,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   # disable showing line numbers by default. Switch to `true` if you'd rather have them on.
   codeLineNumbers = false
 
-  customCSS = ["/css/custom.css", "/css/index-post.css"]
+  customCSS = ["/css/custom.css", "/css/index-posts.css", "/css/posts-list.css"]
+
+  subSections = ["2021", "2020"]
 
   # Site logo
   [params.logo]

@@ -21,10 +21,24 @@ h2 {
 
 h3 {
   font-size: 130%;
+  margin-top: 25px;
+}
+
+h4 {
+  font-size: 115%;
+}
+
+h5 {
+  font-size: 100%;
 }
 
 blockquote p {
   padding: 0;
+  font-size: 1rem !important;
+}
+
+.highlight pre {
+  padding: 1rem 0;
 }
 
 /* Adjust content grid */

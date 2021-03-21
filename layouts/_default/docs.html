@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}"{{ with .Site.Params.enableDarkMode }} class="dark"{{ end }}>
+<head>
+  {{- partial "head" . }}
+</head>
+  {{- $s := .Site.Params }}
+  {{- $p := .Params }}
+  {{- $maxCodeLines := default 100 $s.codeMaxLines }}
+  {{- with $p.codeMaxLines }}
+    {{- $maxCodeLines = . }}
+  {{- end }}
+  {{- $codeLineNumbers := default false $s.codeLineNumbers }}
+  {{ with $p.codeLineNumbers }}
+    {{- $codeLineNumbers = . }}
+  {{ else }}
+    {{ if eq $p.codeLineNumbers false }}
+      {{- $codeLineNumbers = false }}
+    {{ end }}
+  {{ end }}
+<body class="page-{{ .Kind }}"data-code="{{ $maxCodeLines }}" data-lines="{{ $codeLineNumbers }}" >
+  <header class="nav_header">
+    {{- partial "nav" . }}
+  </header>
+  <div class="main wrap pt-4">
+    <!-- divide posts by year -->
+    {{ $pages := (where .Site.RegularPages "Section" "docs").Reverse }}
+    {{ range $year := .Site.Params.subSections }}
+      <section id="posts__list">
+        <h4>{{ $year }}</h4>
+        <ul class="posts__listWrapper">
+          {{ range $pages }}
+            {{ if eq (dateFormat "2006" .Lastmod) $year }}
+              <li class="posts__listLink">
+                <span>{{ dateFormat "2006-01-02" .Lastmod }}</span>
+                <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+  </div>
+  {{- partialCached "footer" . }}
+  {{- partialCached "sprites" . }}
+  {{- partialCached "scripts" . }}
+</body>
+</html>
