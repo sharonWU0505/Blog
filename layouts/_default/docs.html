@@ -23,7 +23,7 @@
   </header>
   <div class="main wrap pt-4">
     <!-- divide posts by year -->
-    {{ $pages := (where .Site.RegularPages "Section" "docs").Reverse }}
+    {{ $pages := (where .Site.RegularPages "Section" "docs") }}
     {{ range $year := .Site.Params.subSections }}
       <section id="posts__list">
         <h4>{{ $year }}</h4>

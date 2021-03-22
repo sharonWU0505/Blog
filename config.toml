@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Sharon's Blog"
+title = "Behind Walls"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
@@ -91,4 +91,4 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   # attribution. Feel free to delete this
   [params.author]
     name = "Sharon Wu"
-    url = "https://github.com/sharonWU0505"
+    url = "https://www.linkedin.com/in/yasyuanwu/"
