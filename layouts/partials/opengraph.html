@@ -4,9 +4,9 @@
 
 <!-- og -->
 <meta property="og:url" content="{{ .Permalink | absURL }}" />
-<meta property="og:type" content="blog" />
+<meta property="og:type" content="website" />
 <meta property="og:site_name" content="Draw Closer" />
-<meta property="og:title" content="{{ if eq .Section "docs" }}{{ .Title }}| {{ end }}Draw Closer" />
+<meta property="og:title" content="{{ if eq .Section "docs" }}{{ .Title }} | {{ end }}Draw Closer" />
 <meta
   property="og:description"
   content="{{ with .Summary }}{{ . }}{{ else }}To find Front-end, and to feel!{{ end }}"

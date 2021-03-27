@@ -24,7 +24,6 @@ post_keywords: "Hugo,Blog,Github,Github Pages,Github Actions"
 
 如果你想建立 GitHub Pages，請按照[說明](https://pages.github.com/)在帳號下建立一個名為 `your-username.github.io` 的 repository。
 
-
 ## Step 3: 部署準備
 
 #### Create GitHub token
@@ -34,6 +33,7 @@ post_keywords: "Hugo,Blog,Github,Github Pages,Github Actions"
 #### Add Access Token as Secrets
 
 在部落格 repo 的 `Settings > Secrets` 頁面上，建立一 `Repository secrets`。
+
 - `Name`: 可取你想要的
 - `Value`: 貼上剛剛複製的 token
 
@@ -81,9 +81,9 @@ jobs:
           # cname: example.com
 ```
 
-## Step 5: Push to GitHub
+## Step 5: Push to GitHub Remote
 
-push 到 GitHub 後，你將會在 repo 的 `Actions` 頁面看到 action 的進度。等待 action 成功後，就可以在 `https://<username>.github.io/` 看到部落格囉！
+push 到 remote 後，你將會在 repo 的 `Actions` 頁面看到 action 的進度。等待 action 成功後，就可以在 `https://<username>.github.io/` 看到部落格囉！
 
 ---
 
