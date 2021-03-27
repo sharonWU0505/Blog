@@ -4,15 +4,16 @@ date: "2020-06-22T19:00:00+08:00"
 draft: false
 slug: "react-props-types"
 tags: ["React"]
+post_keywords: "React,PropTypes"
 ---
 
-以下內容大多翻譯自 React 文件：[Typechecking With PropTypes](https://zh-hant.reactjs.org/docs/typechecking-with-proptypes.html)
-
-在寫 React component 時經常遇到需要確認 `props` 是否符合型別和資料結構的情況，以確保 component 能如預期運作。除了用 [Flow](https://flow.org/) 或 [TypeScript](https://www.typescriptlang.org/) 去檢查型別之外，React 本身也提供 `propTypes` 屬性用以確認 component 拿到的 `props`。在 function 和 class component 上都可以使用。
+在寫 React component 時會須要確認 `props` 是否符合型別和資料結構，以確保 component 能如預期運作。除了用 [Flow](https://flow.org/) 或 [TypeScript](https://www.typescriptlang.org/) 去檢查型別之外，React 本身也提供 `propTypes` 屬性用以檢查拿到的 `props`。在 function 和 class component 上都可以使用。
 
 不只上述好處，個人認為定義 `propTypes` 也能讓 component 的 interface 更為清楚，使其他開發者一眼就知道該傳入的 `props`，有類似文件的作用。
 
 <!--more-->
+
+以下內容大多翻譯自 React 文件：[Typechecking With PropTypes](https://zh-hant.reactjs.org/docs/typechecking-with-proptypes.html)
 
 > 須注意為了避免效能問題，propTypes 檢查只發生在開發模式。
 > 如果發生錯誤，會在 console 中看到警告

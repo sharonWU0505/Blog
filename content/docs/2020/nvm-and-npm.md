@@ -4,6 +4,7 @@ date: "2020-02-07T11:00:00+08:00"
 draft: false
 slug: "nvm-and-npm"
 tags: ["npm"]
+post_keywords: "nvm,npm,node.js"
 ---
 
 ### What is npm and nvm?
