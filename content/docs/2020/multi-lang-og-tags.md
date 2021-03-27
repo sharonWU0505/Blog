@@ -8,6 +8,9 @@ post_keywords: "open graph,html,meta,seo"
 ---
 
 之前遇到 __網頁各語言有各自 open graph 設定__ 的需求，所以決定寫一篇文章介紹什麼是 open graph，以及紀錄 Single Page Application (SPA) 如何實現多國語言之 og tag 設置。
+
+<!--more-->
+
 ## The Open Graph Protocol
 > The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
 > source: https://ogp.me/
