@@ -3,6 +3,7 @@ title: "Validating React Component Props with props-types"
 date: "2020-06-22T19:00:00+08:00"
 draft: false
 slug: "react-props-types"
+tags: ["React"]
 ---
 
 以下內容大多翻譯自 React 文件：[Typechecking With PropTypes](https://zh-hant.reactjs.org/docs/typechecking-with-proptypes.html)

@@ -9,7 +9,7 @@
         <a href="{{ .Permalink | relURL }}">
           <h2 class="post__title">{{ .Title }}</h2>
         </a>
-        <div class="post__time">{{ dateFormat "2006-01-02" .Lastmod }}</div>
+        <div class="post__time">{{ dateFormat "2006-01-02" .Date }}</div>
         <p>{{ if .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
         <a class="post__readMore" href="{{ .Permalink | relURL }}">Read More</a>
       </section>

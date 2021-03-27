@@ -18,15 +18,15 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   weight = 2
   url = "docs/"
 
-[[menu.main]]
-  name = "About Me"
-  weight = 4
-  url = "about/"
-
 # [[menu.main]]
 #   name = "Tags"
 #   weight = 3
 #   url = "tags/"
+
+[[menu.main]]
+  name = "About Me"
+  weight = 4
+  url = "about/"
 
 [markup]
   [markup.goldmark]
@@ -50,6 +50,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     startLevel = 2
 
 # [taxonomies]
+#   series = "series"
 #   tag = "tags"
 
 # Everything below this are Site Params
@@ -57,7 +58,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   repo = "https://github.com/sharonWU0505"
   mainSections = ["docs"]
   mobileNavigation = "left"
-  numberOfTagsShown = 14
   time_format_blog = "Monday, January 02, 2006"
   time_format_default = "January 2, 2006"
   enableDarkMode = true # set to false to disable darkmode by default # user will still have the option to use dark mode
@@ -68,7 +68,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   # disable showing line numbers by default. Switch to `true` if you'd rather have them on.
   codeLineNumbers = false
 
-  customCSS = ["/css/custom.css", "/css/index-posts.css", "/css/posts-list.css"]
+  customCSS = ["/css/custom.css", "/css/index-posts.css", "/css/posts-list.css", "/css/post.css"]
 
   subSections = ["2021", "2020"]
 

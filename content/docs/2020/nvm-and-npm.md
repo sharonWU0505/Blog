@@ -3,6 +3,7 @@ title: "Introduction to NVM and NPM"
 date: "2020-02-07T11:00:00+08:00"
 draft: false
 slug: "nvm-and-npm"
+tags: ["npm"]
 ---
 
 ### What is npm and nvm?

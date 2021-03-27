@@ -3,6 +3,7 @@ title: "如何以 Hugo 建立部落格？"
 date: "2021-03-20T18:00:00+08:00"
 draft: false
 slug: "build-a-blog-with-hugo"
+tags: ["Hugo"]
 ---
 
 [Hugo](https://gohugo.io/) 是一個用 Go 寫成的靜態網站生成器（Static Site Generator）。號稱

@@ -3,6 +3,7 @@ title: "Install Golang and Set Go Workplace"
 date: "2020-04-16T15:00:00+08:00"
 draft: false
 slug: "install-and-set-go"
+tags: ["Golang"]
 ---
 
 __[Go](https://golang.org/)__ or called __GoLang__ is an open source programming language that makes it easy to build simple, reliable, and efficient software.
