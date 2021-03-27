@@ -7,9 +7,9 @@ slug: "react-props-types"
 
 以下內容大多翻譯自 React 文件：[Typechecking With PropTypes](https://zh-hant.reactjs.org/docs/typechecking-with-proptypes.html)
 
-在寫 React component 時經常遇到需要確認 `props` 是否符合型別和資料結構的情況，確保 component 能如預期運作。除了用 Flow 或 TypeScript 去檢查型別之外，React 本身也提供 `propTypes` 屬性用以確認 component 拿到的 `props`。在 function 和 class component 上都可以使用。
+在寫 React component 時經常遇到需要確認 `props` 是否符合型別和資料結構的情況，以確保 component 能如預期運作。除了用 [Flow](https://flow.org/) 或 [TypeScript](https://www.typescriptlang.org/) 去檢查型別之外，React 本身也提供 `propTypes` 屬性用以確認 component 拿到的 `props`。在 function 和 class component 上都可以使用。
 
-除了上述好處外，個人認為定義 `propTypes` 也能讓 component 的 interface 更為清楚，使其他開發者一眼就知道該傳入的 `props`，有類似文件的作用。
+不只上述好處，個人認為定義 `propTypes` 也能讓 component 的 interface 更為清楚，使其他開發者一眼就知道該傳入的 `props`，有類似文件的作用。
 
 <!--more-->
 

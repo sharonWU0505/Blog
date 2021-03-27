@@ -1,3 +1,3 @@
 +++
-title = "Sharon's Blog"
+title = "Draw Closer"
 +++

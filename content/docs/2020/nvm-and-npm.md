@@ -6,9 +6,9 @@ slug: "nvm-and-npm"
 ---
 
 ### What is npm and nvm?
-- npm (Node Package Manager)
-  - JavaScipt 套件庫管理工具，可以藉由它下載各式各樣的套件
-- nvm (Node Version Manager)
+- __npm (Node Package Manager)__
+  - JavaScript 套件庫管理工具，可以藉由它下載各式各樣的套件
+- __nvm (Node Version Manager)__
   - 各套件和專案用的 Node.js 版本不同，而版本間有不相容的問題，導致套件和專案無法順利運行，因此需要版本管理工具
   - 從 nvm 下載/更換 Node.js 和 npm 版本
 

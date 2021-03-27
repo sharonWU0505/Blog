@@ -5,7 +5,7 @@ weight: 2
 
 {{< block "grid-2" >}}
 {{< column "mr-2" >}}
-Hi, I'm Sharon. I'm a _frontend engineer_ at Taipei.
+Hi, I'm Sharon. I'm a _frontend engineer_ from Taipei.
 
 These days I build web app with React. I create platforms, campaign websites, and administration systems at work.
 

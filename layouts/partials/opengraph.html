@@ -1,16 +1,17 @@
-<meta name="keywords" content="frontend,React,Hugo,Redux,npm,web" />
-<meta name="description" content="To see behind walls and draw closer to Frontend!" />
-<meta property="og:type" content="blog" /><meta property="og:site_name" content="behind-walls" />
-<meta property="og:title" content="Behind Walls" /><meta
+<!-- seo -->
+<meta name="keywords" content="frontend,React,Redux,Hugo,Redux,npm,web" />
+<meta name="description" content="{{ with .Summary }}{{ . }}{{ else }}To find Front-end, and to feel!{{ end }}" />
+
+<!-- og -->
+<meta property="og:url" content="{{ .Permalink | absURL }}" />
+<meta property="og:type" content="blog" />
+<meta property="og:site_name" content="Draw Closer" />
+<meta property="og:title" content="{{ if eq .Section "docs" }}{{ .Title }}| {{ end }}Draw Closer" />
+<meta
   property="og:description"
-  content="To see behind walls and draw closer to Frontend!"
+  content="{{ with .Summary }}{{ . }}{{ else }}To find Front-end, and to feel!{{ end }}"
 />
-<meta property="og:image:height" content="630" /><meta
-  name="twitter:card"
-  content="summary_large_image"
-/>
-<meta property="og:image" content="/images/og.jpg" /><meta
-  property="og:image:secure_url"
-  content="/images/og.jpg"
-/>
-<meta property="og:url" content="https://sharonwu0505.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image" content="{{ with .Params.og_image }}{{ . }}{{ else }}/images/about.jpg{{ end }}" />
+<meta property="og:image:secure_url" content="{{ with .Params.og_image }}{{ . }}{{ else }}/images/about.jpg{{ end }}" />
