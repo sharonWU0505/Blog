@@ -68,7 +68,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   # disable showing line numbers by default. Switch to `true` if you'd rather have them on.
   codeLineNumbers = false
 
-  customCSS = ["/css/custom.css", "/css/index-posts.css", "/css/posts-list.css", "/css/post.css"]
+  customCSS = ["/css/fix-grid-width.css", "/css/custom.css", "/css/index-posts.css", "/css/posts-list.css", "/css/post.css"]
 
   subSections = ["2021", "2020"]
 
