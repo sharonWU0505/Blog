@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Draw Closer"
+title = "Draw Closer - A Blog by Sharon Wu"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
@@ -73,10 +73,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   subSections = ["2021", "2020"]
 
   # Site logo
-  [params.logo]
-    lightMode = "/images/compose.svg"
-    darkMode = "/images/compose-light.svg"
-
   [[params.sites]]
     name = "GitHub"
     icon = "/images/logo-github.svg"
