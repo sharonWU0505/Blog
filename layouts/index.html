@@ -1,7 +1,9 @@
 {{- define "main" }}
-<div class="content">
+<h1 style="background-color: var(--theme);padding: 10px 30px; color: #ffffff;">
   {{ .Content }}
+</h1>
 
+<div class="content">
   <main>
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ range first 10 $pages }}
