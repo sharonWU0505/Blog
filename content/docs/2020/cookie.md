@@ -3,8 +3,8 @@ title: "Introduction to Cookie"
 date: "2020-02-17T09:00:00+08:00"
 draft: false
 slug: "cookie"
-tags: ["cookie,browser"]
-post_keywords: "cookie,browser"
+tags: ["HTTP"]
+post_keywords: "http,https,cookie,browser"
 ---
 
 認識 cookie 的筆記。
