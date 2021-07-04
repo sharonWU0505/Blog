@@ -7,8 +7,6 @@ theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of
 # theme = "compose"
 enableGitInfo = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
-
 [outputs]
   home = ["HTML", "RSS","JSON"]
 
@@ -18,10 +16,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   weight = 2
   url = "docs/"
 
-# [[menu.main]]
-#   name = "Tags"
-#   weight = 3
-#   url = "tags/"
+[[menu.main]]
+  name = "Tags"
+  weight = 3
+  url = "tags/"
 
 [[menu.main]]
   name = "About Me"
@@ -49,9 +47,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     ordered = false
     startLevel = 2
 
-# [taxonomies]
-#   series = "series"
-#   tag = "tags"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # Everything below this are Site Params
 [params]

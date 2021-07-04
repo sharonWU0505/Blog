@@ -4,7 +4,9 @@
     <h1>{{ .Title }}</h1>
     <div class="post__tags">
       {{ range .Params.tags }}
-       <span class="post__tag">{{ . }}</span>
+        <a href="{{ "tags/" | absURL }}{{ . | urlize }}">
+          <span class="post__tag">{{ . }}</span>
+        </a>
       {{ end }}
     </div>
     {{- .Content }}

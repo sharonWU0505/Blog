@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}"{{ with .Site.Params.enableDarkMode }} class="dark"{{ end }}>
+<head>
+  {{- partial "head" . }}
+</head>
+  {{- $s := .Site.Params }}
+  {{- $p := .Params }}
+  {{- $maxCodeLines := default 100 $s.codeMaxLines }}
+  {{- with $p.codeMaxLines }}
+    {{- $maxCodeLines = . }}
+  {{- end }}
+  {{- $codeLineNumbers := default false $s.codeLineNumbers }}
+  {{ with $p.codeLineNumbers }}
+    {{- $codeLineNumbers = . }}
+  {{ else }}
+    {{ if eq $p.codeLineNumbers false }}
+      {{- $codeLineNumbers = false }}
+    {{ end }}
+  {{ end }}
+<body class="page-{{ .Kind }}"data-code="{{ $maxCodeLines }}" data-lines="{{ $codeLineNumbers }}" >
+  <header class="nav_header">
+    {{- partial "nav" . }}
+  </header>
+  <div class="main wrap pt-4">
+    <section id="tags__list">
+      <ul class="posts__listWrapper">
+        {{ range .Pages }}
+          <li class="posts__listLink">
+            <div>{{ dateFormat "01-02" .Page.Date }}</div>
+            <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  </div>
+  {{- partialCached "footer" . }}
+  {{- partialCached "sprites" . }}
+  {{- partialCached "scripts" . }}
+</body>
+</html>
