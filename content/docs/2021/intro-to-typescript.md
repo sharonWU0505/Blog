@@ -3,7 +3,7 @@ title: "Introduction to TypeScript and Primitive Types"
 date: "2021-07-30T17:00:00+08:00"
 draft: false
 slug: "intro-to-typescript"
-tags: ["JavaScript, TypeScript"]
+tags: ["JavaScript", "TypeScript"]
 post_keywords: "JavaScript,TypeScript"
 ---
 
@@ -12,6 +12,8 @@ post_keywords: "JavaScript,TypeScript"
 - 開發者在宣告變數時，不需要事先指定變數的型別 e.g. string, number, boolean, etc.
 - JavaScript 會根據變數被賦予的值去判斷它的型別
 - 某些情況下，JavaScript 會在背地裡執行「強制轉型」(coercion)，將變數轉換成可以處理的型別
+
+<!--more-->
 
 弱型別的設計讓 JavaScript 撰寫起來更方便，但也因此經常衍生出許多開發者預料之外的行為。在較大型、多人協作的專案裡，開發者們逐漸轉向 TypeScript，以期能借用「強型別」的概念，預先有靜態的型別檢查，避免預期外的錯誤。
 
