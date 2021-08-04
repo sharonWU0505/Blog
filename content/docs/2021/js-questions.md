@@ -19,12 +19,14 @@ post_keywords: "JavaScript,Note"
 
 > What is hoisting? Do `const` and `let` have hoisting?
 
+> What are primitive types and object types for variables?
+
+> What is the difference between `Map` and `Object`?
+
+> What is IIFE?
+
 > What is closure?
 
 > What is prototype?
 
 > What is the difference between callback-hell, Promise, and async-await?
-
-> What are primitive type and object type?
-
-> What is the difference between `Map` and `Object`?

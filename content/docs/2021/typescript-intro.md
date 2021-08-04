@@ -2,7 +2,7 @@
 title: "Introduction to TypeScript and Primitive Types"
 date: "2021-07-30T17:00:00+08:00"
 draft: false
-slug: "intro-to-typescript"
+slug: "typescript-intro"
 tags: ["JavaScript", "TypeScript"]
 post_keywords: "JavaScript,TypeScript"
 ---
@@ -15,7 +15,7 @@ post_keywords: "JavaScript,TypeScript"
 
 <!--more-->
 
-弱型別的設計讓 JavaScript 撰寫起來更方便，但也因此經常衍生出許多開發者預料之外的行為。在較大型、多人協作的專案裡，開發者們逐漸轉向 TypeScript，以期能借用「強型別」的概念，預先有靜態的型別檢查，避免預期外的錯誤。
+弱型別的設計讓 JavaScript 撰寫起來更方便，但也因此經常衍生出許多開發者預料之外的行為。在較大型、多人協作的專案裡，開發者們逐漸轉向 [TypeScript](https://www.typescriptlang.org/)，以期能借用「強型別」的概念，預先有靜態的型別檢查，避免預期外的錯誤。
 
 TypeScript 是 JavaScript 型別的超集，它會被編譯成 JavaScript，並可被瀏覽器執行。目前是一個由微軟維護的[開源專案](https://github.com/Microsoft/TypeScript)。
 
@@ -88,4 +88,15 @@ let myBoolean: boolean = myUndefined;
 
 #### Void
 
-不過 JavaScript 中就沒有空值 (`void`) 的概念了。在 TypeScript 中，可以用 `void` 表示沒有任何返回值的函式，也可以用來宣告變數，但型別為 `void` 的變數只能被賦值為 `null` 或 `undefined`，所以沒什麼意義。
+而 JavaScript 中沒有空值 (`void`) 的概念，不過在 TypeScript 中，可以用 `void` 表示沒有任何返回值的函式返回值，也可以用來宣告變數，但型別為 `void` 的變數只能被賦值為 `null` 或 `undefined`，所以沒什麼意義。
+
+```
+function sayHello(): void {
+  console.log("hello")
+}
+```
+
+## References
+
+- https://www.typescriptlang.org/
+- https://willh.gitbook.io/typescript-tutorial/
