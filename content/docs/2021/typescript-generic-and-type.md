@@ -7,7 +7,7 @@ tags: ["JavaScript", "TypeScript"]
 post_keywords: "JavaScript,TypeScript"
 ---
 
-此篇要來談談更多 TypeScript 的用法，包括通用型別 (Generic Types) 的用途，以及 interface 和型別別名 (Type Alias) 的使用差異。
+此篇要來談談 TypeScript 通用型別 (Generic Types) 的用途，以及 interface 和型別別名 (Type Alias) 的使用差異。
 
 <!--more-->
 
@@ -21,7 +21,7 @@ function identity(arg: number): number {
 }
 ```
 
-`identify` 函式收到參數 `arg`，並回傳該參數。如果想重用函式，且不限定參數型別，我們可以使用 `any`：
+`identify` 函式收到參數 `arg`，並回傳該參數。如果想更有彈性地使用函式，比方說不限定參數型別，則我們可以使用 `any`：
 
 ```
 function identity(arg: any): any {
