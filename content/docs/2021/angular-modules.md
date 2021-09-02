@@ -55,7 +55,7 @@ NgModule 為它的 components 提供一個 *compilation context（*編譯上下�
 
 而 component 和 component template 組成 view，view 能具有階層結構（hierarchy），此結構可以混合使用由不同 NgModule 中的 component 定義的 view。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5fc123a9-d87c-48a4-8e83-3fe746d84a39/Untitled.png)
+![](https://angular.io/generated/images/guide/architecture/view-hierarchy.png)
 
 如上圖所示，此 view 階層由來自兩個 NgModule（由藍色和橘色區分）的 views 組合而成。
 
