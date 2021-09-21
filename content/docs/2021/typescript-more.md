@@ -3,7 +3,7 @@ title: "TypeScript: Any, Array, Union Types, Enum, Function, and Interface"
 date: "2021-08-03T10:00:00+08:00"
 draft: false
 slug: "typescript-more"
-tags: ["JavaScript", "TypeScript"]
+tags: ["TypeScript"]
 post_keywords: "JavaScript,TypeScript"
 ---
 

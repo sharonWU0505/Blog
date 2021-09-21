@@ -3,7 +3,7 @@ title: "TypeScript: Generic Types and Type Alias"
 date: "2021-08-05T14:00:00+08:00"
 draft: false
 slug: "typescript-generic-and-type"
-tags: ["JavaScript", "TypeScript"]
+tags: ["TypeScript"]
 post_keywords: "JavaScript,TypeScript"
 ---
 

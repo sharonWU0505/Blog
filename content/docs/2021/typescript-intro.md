@@ -3,7 +3,7 @@ title: "Introduction to TypeScript and Primitive Types"
 date: "2021-07-30T17:00:00+08:00"
 draft: false
 slug: "typescript-intro"
-tags: ["JavaScript", "TypeScript"]
+tags: ["TypeScript"]
 post_keywords: "JavaScript,TypeScript"
 ---
 

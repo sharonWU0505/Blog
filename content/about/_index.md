@@ -5,13 +5,16 @@ weight: 2
 
 {{< block "grid-2" >}}
 {{< column "mr-2" >}}
-Hi, I'm Sharon. I'm a _frontend engineer_ from Taipei.
+Hi, I'm Sharon. I'm a _software engineer_ from Taipei, Taiwan.
 
-These days I build web app with React. I create platforms, campaign websites, and administration systems at work.
+These days I develop large-scale cloud security platform mainly by Angular and PHP. 
+I also have much experience on React for building interactive campaign websites and internal administration systems.
 
-In the past few years, I wrote Vue.js and Django. And since I studied in college, using Python to build tools is my interest.
+In the past few years, I wrote Python and Django. And since then, using Python to boost routine works became one of my interest.
 
-This blog contains my notes for development, mostly are frontend things. Feel free to read and contact me if you would like to discuss more.
+This blog contains my notes for software development, mostly are frontend things. I'm stepping into backend now, so hopefully there'll have more related to it in the future.
+
+Feel free to read and contact me if you would like to discuss more.
 
 ---
 
