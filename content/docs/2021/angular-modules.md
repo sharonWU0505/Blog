@@ -33,7 +33,7 @@ NgModules 系統與 JavaScript（ES2015/ES6）用來處理 JavaScript 物件的�
 
 這是一個簡單的 root NgModule 範例：
 
-```jsx
+```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

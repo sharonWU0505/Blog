@@ -33,7 +33,7 @@ function identity(arg: any): any {
 
 我們使用 type variable `T` 來代表型別，限制了函式輸入和輸出值的型別必須相同：
 
-```
+```typescript
 function identify<T>(arg: T): T {
   return arg;
 }
