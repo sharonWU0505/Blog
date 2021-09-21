@@ -51,7 +51,7 @@ npm install prop-types --save
 
 ### Example (同理 function component)
 
-```
+```javascript
 import PropTypes from "prop-types";
 
 class ReactComponent extends React.Component {
@@ -67,7 +67,7 @@ ReactComponent.propTypes = {
 
 也可以給予 `props` `defaultProps`。型別檢查會在 `defaultProps` 賦予 `props` 值之後，所以型別檢查也會作用在 `defaultProps` 上。
 
-```
+```javascript
 class ReactComponent extends React.Component {
   render() {
     return (

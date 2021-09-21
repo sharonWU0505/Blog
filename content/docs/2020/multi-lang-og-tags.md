@@ -42,7 +42,8 @@ post_keywords: "open graph,html,meta,seo"
 - `og:video`
 
 #### Example
-```
+
+```html
 <meta property="og:type" content="article" />
 <meta property="og:title" content="title to show on SNS" />
 <meta property="og:description" content="describe your website" />

@@ -61,7 +61,7 @@ tsc myFile.ts
 
 最基本的 TypeScript 定義為：
 
-```
+```typescript
 let firstVar: type;
 ```
 
@@ -73,7 +73,7 @@ Primitive types 包括 `string`, `number`, `boolean`, `null`, `undefined`。
 
 我們可以透過以下定義一個型別為 `string` 的變數。定義其他型別的作法基本上相同。
 
-```
+```typescript
 let myString: string = "hello world"
 ```
 
@@ -81,7 +81,7 @@ let myString: string = "hello world"
 
 `null` 和 `undefined` 就比較特別了，它們是所有型別的子型別。意思是型別為 `null` 或 `undefined` 的變數，可以被賦值給其他變數，例如：
 
-```
+```typescript
 let myUndefined: undefined = undefined;
 let myBoolean: boolean = myUndefined;
 ```
@@ -90,7 +90,7 @@ let myBoolean: boolean = myUndefined;
 
 而 JavaScript 中沒有空值 (`void`) 的概念，不過在 TypeScript 中，可以用 `void` 表示沒有任何返回值的函式返回值，也可以用來宣告變數，但型別為 `void` 的變數只能被賦值為 `null` 或 `undefined`，所以沒什麼意義。
 
-```
+```typescript
 function sayHello(): void {
   console.log("hello")
 }

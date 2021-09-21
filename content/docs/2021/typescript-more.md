@@ -17,7 +17,7 @@ post_keywords: "JavaScript,TypeScript"
 
 如果使用普通型別，在賦值過程中改變型別是不被允許的，但如果是 `any` 型別，則允許。以下程式將能順利被編譯。
 
-```
+```typescript
 let myNumber: any = 'nine';
 myNumber = 9;
 ```
@@ -26,7 +26,7 @@ myNumber = 9;
 
 如果沒有明確地指定型別，那麼 TypeScript 會依照型別推論（Type Inference）的規則推斷出型別。例如：
 
-```
+```typescript
 let myNumber = 'nine';
 myNumber = 9;
 ```
@@ -35,7 +35,7 @@ myNumber = 9;
 
 但如果宣吿變數時沒有指定型別也沒有賦值，則它會被推斷成任意型別 (`any`)，所以以下程式碼會通過編譯。
 
-```
+```typescript
 let myNumber;
 myNumber = 'nine';
 myNumber = 9;
@@ -48,7 +48,7 @@ myNumber = 9;
 - an array of number: `number[]`
 - an array of string: `string[]`
 
-```
+```typescript
 const numArray: number[] = [1, 2, 3];
 ```
 
@@ -56,7 +56,7 @@ const numArray: number[] = [1, 2, 3];
 
 聯合型別（Union Types）表示取值可以為多種型別中的一種。
 
-```
+```typescript
 let myNumber: string | number;
 myNumber = 'nine';
 myNumber = 9;
@@ -64,13 +64,13 @@ myNumber = 9;
 
 當 TypeScript 不確定一個聯合型別的變數到底是哪一個型別時，我們只能存取所有型別裡共有的屬性或方法。
 
-```
+```typescript
 function getLength(something: string | number): number {
   return something.length; // error: 因為 number 沒有 `length` 屬性
 }
 ```
 
-```
+```typescript
 function getLength(something: string | number): number {
   return something.toString(); // works
 }
@@ -82,7 +82,7 @@ Enum 型別經常被用在變數值有一定範圍的場景，例如一週 7 天
 
 我們用 `enum` 關鍵字來定義變數：
 
-```
+```typescript
 enum Filters {
   ALL,
   ACTIVE,
@@ -92,7 +92,7 @@ enum Filters {
 
 列舉的項目會被賦值從 0 開始遞增的數字，同時也會有數字到列舉值的反向對映，所以如果我們印出 `Filters`，會看到：
 
-```
+```typescript
 {
   '0': 'ALL',
   '1': 'ACTIVE',
@@ -113,7 +113,7 @@ Enum 還有更多應用，包括手動賦值、常數列舉等等，有興趣的
 
 #### Normal Function
 
-```
+```typescript
 function sum(num1: number, num2: number): number {
   return num1 + num2;
 }
@@ -121,7 +121,7 @@ function sum(num1: number, num2: number): number {
 
 #### Arrow Function
 
-```
+```typescript
 const sum = (num1: number, num2: number): number => {
   return num1 + num2;
 }
@@ -134,7 +134,7 @@ sum(1, 2, 3);  // works: more arguments are ignored
 
 如果某參數為 optional，可用 `?` 來處理：
 
-```
+```typescript
 function f(x?: number) {
   // ...
 }
@@ -147,7 +147,7 @@ f(10); // OK
 
 在 TypeScript 中，我們使用 interface 來定義物件 (object) 的型別或形狀。以下是一個簡單的例子：
 
-```
+```typescript
 interface Person { // interface naming 通常首字母是大寫
   name: string;
   gender: string;
@@ -161,7 +161,7 @@ let Amy: Person = {
 
 可以使用 `readonly` property 來定義唯讀的物件屬性：
 
-```
+```typescript
 interface Person {
   readonly name: string;
   gender: string;

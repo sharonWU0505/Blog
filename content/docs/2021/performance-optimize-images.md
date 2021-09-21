@@ -66,7 +66,7 @@ Lazy loading 的概念是：網頁在瀏覽時只載入一開始所需的圖片�
 - 啟用功能：打開 Chrome 後到網址輸入 `chrome://flags`，接著搜尋 `lazy`，再啟用這功能：`Enable lazy image loading (#enable-lazy-image-loading)`
 - 使用方法：在 HTML 的 img tag 加上 `loading="lazy"`
 
-```
+```html
 <img src="my-image.jpg" loading="lazy">
 ```
 
@@ -83,6 +83,12 @@ Lazy loading 的概念是：網頁在瀏覽時只載入一開始所需的圖片�
 #### 實作 Lazy Loading 之步驟（以使用 Intersection Observer API 為例）
 
 - 不讓圖片正常載入：先將圖片 URL 放在 `data-src`
+
+```html
+<!-- 無法正常載入的圖片 -->
+<img class="img lazy" data-src="cat.jpg">
+```
+
 - 監視圖片元素，判斷它們是否進入到畫面中（倚賴 Intersection Observer API）
   - 首先創造一個 Intersection Observer instance
   - 傳入一個 callback function 參數，等偵測到元素進入畫面時 callback function 會被呼叫
@@ -90,12 +96,7 @@ Lazy loading 的概念是：網頁在瀏覽時只載入一開始所需的圖片�
 - 元素進入畫面後，再載入圖片
   - 判斷目標元素是否進入畫面
   - 確認目標進入畫面後，把 `data-src` 的值取出，放到 `src` -> 顯示圖片
-- 用 `observer.unobserve` 取消監視元素
-
-```html
-<!-- 無法正常載入的圖片 -->
-<img class="img lazy" data-src="cat.jpg">
-```
+- 使用 `observer.unobserve` 取消監視元素
 
 ```javascript
 // callback function parameter for observer

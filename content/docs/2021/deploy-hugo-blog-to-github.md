@@ -42,7 +42,7 @@ post_keywords: "Hugo,Blog,Github,Github Pages,Github Actions"
 - 在部落格 repo 建立 `.github/workflows` 資料夾
 - 資料夾下新增 `main.yml`，貼上以下 action 設置
 
-```
+```yaml
 name: CI
 on: push
 jobs:

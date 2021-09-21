@@ -15,7 +15,7 @@ post_keywords: "JavaScript,TypeScript"
 
 有時我們想在具有多種型別可能的情況下重用 (reuse) 程式碼，例如以下這個例子：
 
-```
+```typescript
 function identity(arg: number): number {
   return arg;
 }
@@ -23,7 +23,7 @@ function identity(arg: number): number {
 
 `identify` 函式收到參數 `arg`，並回傳該參數。如果想更有彈性地使用函式，比方說不限定參數型別，則我們可以使用 `any`：
 
-```
+```typescript
 function identity(arg: any): any {
   return arg;
 }
@@ -41,7 +41,7 @@ function identify<T>(arg: T): T {
 
 使用 **type variable** 時，因為無從事先得知變數的型別，所以無法操作屬性或方法，例如以下範例將會收到錯誤：
 
-```
+```typescript
 function identify<T>(arg: T): T {
   console.log(arg.length); // error: Property 'length' does not exist on type 
   return arg;
@@ -50,7 +50,7 @@ function identify<T>(arg: T): T {
 
 不過如果是：
 
-```
+```typescript
 function loggingIdentity<T>(args: T[]): T[] {
   console.log(args.length);
   return args;
@@ -69,7 +69,7 @@ function loggingIdentity<T>(args: T[]): T[] {
 
 `type` 和 `interface` 一樣可以用來定義物件格式：
 
-```
+```typescript
 type Animal = {
   name: string
 }
@@ -77,7 +77,7 @@ type Animal = {
 
 `type` 可使用 intersections 延伸屬性（`interface` 則通常會使用 `extends`)
 
-```
+```typescript
 type Animal = {
   name: string
 }
@@ -97,7 +97,7 @@ bear.honey;
 
 根據[官方文件](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#reusable-types-type-aliases)，`type` 看起來更推薦用在單純要表示偏靜態的資料格式之時：
 
-```
+```typescript
 // declaration
 type GreetingLike = string | (() => string) | MyGreeter;
 
