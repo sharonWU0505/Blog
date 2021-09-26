@@ -23,23 +23,23 @@ post_keywords: "Angular,Angular Templates,ng-template,ng-container,ngTemplateOut
 @Component({
   selector: 'app-root',
   template: `      
-      <ng-template>
-          <button class="tab-button" (click)="login()">{{loginText}}</button>
-          <button class="tab-button" (click)="signUp()">{{signUpText}}</button>
-      </ng-template>
+    <ng-template>
+      <button class="tab-button" (click)="login()">{{loginText}}</button>
+      <button class="tab-button" (click)="signUp()">{{signUpText}}</button>
+    </ng-template>
   `})
 export class AppComponent {
-    loginText = 'Login';
-    signUpText = 'Sign Up'; 
-    lessons = ['Lesson 1', 'Lessons 2'];
+  loginText = 'Login';
+  signUpText = 'Sign Up';
+  lessons = ['Lesson 1', 'Lessons 2'];
 
-    login() {
-        console.log('Login');
-    }
+  login() {
+    console.log('Login');
+  }
 
-    signUp() {
-        console.log('Sign Up');
-    }
+  signUp() {
+    console.log('Sign Up');
+  }
 }
 ```
 
@@ -47,27 +47,27 @@ export class AppComponent {
 
 #### The `ng-template` Directive and `ngIf`
 
-```angular
+```html
 <div class="lessons-list" *ngIf="lessons else loading">
   ... 
 </div>
 
 <ng-template #loading>
-    <div>Loading...</div>
+  <div>Loading...</div>
 </ng-template>
 ```
 
 這是一個最常見的例子。我們透過定義 `loading` (`#loading`) 為 template reference，在沒有 `lessons` 資料時顯示 `loading` template。這段程式碼實際上會被 Angular 解讀為以下形式：
 
-```angular
+```html
 <ng-template [ngIf]="lessons" [ngIfElse]="loading">
-   <div class="lessons-list">
-     ... 
-   </div>
+  <div class="lessons-list">
+    ... 
+  </div>
 </ng-template>
 
 <ng-template #loading>
-    <div>Loading...</div>
+  <div>Loading...</div>
 </ng-template>
 ```
 
@@ -75,13 +75,13 @@ export class AppComponent {
 
 如果要使用多個 structural directives 我們可以這樣寫：
 
-```angular
+```html
 <div *ngIf="lessons">
-    <div class="lesson" *ngFor="let lesson of lessons">
-        <div class="lesson-detail">
-            {{lesson | json}}
-        </div>
+  <div class="lesson" *ngFor="let lesson of lessons">
+    <div class="lesson-detail">
+      {{lesson | json}}
     </div>
+  </div>
 </div>
 ```
 
@@ -89,19 +89,19 @@ export class AppComponent {
 
 ## `ng-container` Directive
 
-```angular
+```html
 <ng-container *ngIf="lessons">
-    <div class="lesson" *ngFor="let lesson of lessons">
-        <div class="lesson-detail">
-            {{lesson | json}}
-        </div>
+  <div class="lesson" *ngFor="let lesson of lessons">
+    <div class="lesson-detail">
+      {{lesson | json}}
     </div>
+  </div>
 </ng-container>
 ```
 
 **`ng-container` 使我們得以在不必生成多餘元素的情況下，將由 structural directive 控制的元素附帶到畫面上**。而它也能用來動態地注入 (inject) template 到畫面，一樣是透過 template reference `#loading`，並藉由 `ngTemplateOutlet` directive，我們能在頁面任何地方實例化 template。
 
-```angular
+```html
 <ng-container *ngTemplateOutlet="loading"></ng-container>
 ```
 
@@ -121,8 +121,8 @@ export class AppComponent {
     <ng-container *ngTemplateOutlet="estimateTemplate;context:ctx"></ng-container>
   `})
 export class AppComponent {
-    totalEstimate = 10;
-    ctx = {estimate: this.totalEstimate};
+  totalEstimate = 10;
+  ctx = {estimate: this.totalEstimate};
 }
 ```
 
@@ -138,18 +138,18 @@ Template 中我們以 prefix `let-` 定義它的 property `lessonsCounter`，此
 @Component({
   selector: 'app-root',
   template: `      
-      <ng-template #defaultTabButtons>
-          <button class="tab-button" (click)="login()">{{loginText}}</button>
-          <button class="tab-button" (click)="signUp()">{{signUpText}}</button>
-      </ng-template>
+    <ng-template #defaultTabButtons>
+      <button class="tab-button" (click)="login()">{{loginText}}</button>
+      <button class="tab-button" (click)="signUp()">{{signUpText}}</button>
+    </ng-template>
   `})
 export class AppComponent implements OnInit {
-    @ViewChild('defaultTabButtons')
-    private defaultTabButtonsTpl: TemplateRef<any>;
+  @ViewChild('defaultTabButtons')
+  private defaultTabButtonsTpl: TemplateRef<any>;
 
-    ngOnInit() {
-        console.log(this.defaultTabButtonsTpl);
-    }
+  ngOnInit() {
+    console.log(this.defaultTabButtonsTpl);
+  }
 }
 ```
 
@@ -157,7 +157,7 @@ export class AppComponent implements OnInit {
 
 這常見於當我們想建立更客製化的 component，我們不只傳遞 configuration parameter 或 configuration object，我們亦能將 template 作為 input parameter。
 
-#### Parent Component
+#### Parent Component: `AppComponent`
 
 ```typescript
 @Component({
@@ -165,8 +165,8 @@ export class AppComponent implements OnInit {
   template: `      
   <ng-template #customTabButtons>
     <div class="custom-class">
-        <button class="tab-button" (click)="login()">{{loginText}}</button>
-        <button class="tab-button" (click)="signUp()">{{signUpText}}</button>
+      <button class="tab-button" (click)="login()">{{loginText}}</button>
+      <button class="tab-button" (click)="signUp()">{{signUpText}}</button>
     </div>
   </ng-template>
   <tab-container [headerTemplate]="customTabButtons"></tab-container>      
@@ -191,8 +191,8 @@ export class AppComponent implements OnInit {}
     ... rest of tab container component ...
   `})
 export class TabContainerComponent {
-    @Input()
-    headerTemplate: TemplateRef<any>;
+  @Input()
+  headerTemplate: TemplateRef<any>;
 }
 ```
 
