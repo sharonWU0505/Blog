@@ -13,7 +13,7 @@ post_keywords: "Angular,Angular Templates,ng-template,ng-container,ngTemplateOut
 
 <!--more-->
 
-## `ng-template` Directive
+## ng-template Directive
 
 顧名思義，`ng-template` directive 代表一段 Angular template，它們可以和其他 templates 組合成最終的 component template。`ng-template` 其實被廣泛應用在 Angular 自身的 structural directives, e.g. `ngIf`, `ngFor`, `ngSwitch` 當中。
 
@@ -45,7 +45,7 @@ export class AppComponent {
 
 大家注意到的第一件事應該會是**以上程式碼並沒有 render 任何東西到畫面中**。因為 `ng-template` 只是單純用來定義 `template`，而我們尚未使用它。
 
-#### The `ng-template` Directive and `ngIf`
+#### The ng-template Directive and ngIf
 
 ```html
 <div class="lessons-list" *ngIf="lessons else loading">
@@ -87,7 +87,7 @@ export class AppComponent {
 
 不過你應該會想問：可以不要有多餘的 `div` 嗎？答案是可以的，而正是 `ng-container` 讓我們可以這麼做！
 
-## `ng-container` Directive
+## ng-container Directive
 
 ```html
 <ng-container *ngIf="lessons">
