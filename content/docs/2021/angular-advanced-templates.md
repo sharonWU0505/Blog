@@ -3,7 +3,7 @@ title: "Angular Advanced Templates - ng-template, ng-container and ngTemplateOut
 date: "2021-09-25T11:00:00+08:00"
 draft: false
 slug: "angular-advanced-templates"
-tags: ["Angular", "Angular Templates"]
+tags: ["Angular"]
 post_keywords: "Angular,Angular Templates,ng-template,ng-container,ngTemplateOutlet"
 ---
 
