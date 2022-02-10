@@ -3,7 +3,7 @@ title: "Angular - Introduction to Modules"
 date: "2021-09-01T13:00:00+08:00"
 draft: false
 slug: "angular-intro-to-modules"
-tags: ["Angular", "Angular Basic Concepts"]
+tags: ["Angular"]
 post_keywords: "Angular,Angular Modules"
 ---
 
