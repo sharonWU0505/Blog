@@ -3,7 +3,7 @@ title: "Setting Prettier to Format Codes"
 date: "2020-11-01T11:00:00+08:00"
 draft: false
 slug: "setting-prettier"
-tags: ["Prettier", "Workflow"]
+tags: ["Tools"]
 post_keywords: "eslint,prettier"
 ---
 

@@ -3,12 +3,12 @@ title = "Draw Closer - A Blog by Sharon Wu"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
-theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
-# theme = "compose"
+# theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
+theme = "compose"
 enableGitInfo = true
 
 [outputs]
-  home = ["HTML", "RSS","JSON"]
+  home = ["HTML", "RSS", "JSON"]
 
 #  menu items
 [[menu.main]]
@@ -56,6 +56,7 @@ enableGitInfo = true
 # Everything below this are Site Params
 [params]
   repo = "https://github.com/sharonWU0505"
+  uniqueHomepage = true
   mainSections = ["docs"]
   mobileNavigation = "left"
   time_format_blog = "Monday, January 02, 2006"
@@ -70,7 +71,7 @@ enableGitInfo = true
 
   customCSS = ["/css/fix-grid-width.css", "/css/custom.css", "/css/index-posts.css", "/css/posts-list.css", "/css/post.css"]
 
-  subSections = ["2021", "2020"]
+  subSections = ["2022", "2021", "2020"]
 
   # Site logo
   [[params.sites]]

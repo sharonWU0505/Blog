@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ .Site.Language.Lang }}"{{ with .Site.Params.enableDarkMode }} class="dark"{{ end }}>
+<html lang="{{ site.Language.Lang }}"{{ with site.Params.enableDarkMode }} class="dark"{{ end }}>
 <head>
   {{- partial "head" . }}
 </head>
@@ -30,8 +30,9 @@
       {{ end }}
     </section>
   </div>
-  {{- partialCached "footer" . }}
-  {{- partialCached "sprites" . }}
-  {{- partialCached "scripts" . }}
+  {{- partialCached "footer" . -}}
+  {{- partialCached "sprites" . -}}
+  {{- partialCached "scripts/bundle" . -}}
+  {{- partial "scripts/other" . -}}
 </body>
 </html>

@@ -3,7 +3,7 @@ title: "Setting ESLint to Enhance Frontend Development"
 date: "2020-10-29T11:00:00+08:00"
 draft: false
 slug: "setting-eslint"
-tags: ["ESLint", "Workflow"]
+tags: ["JavaScript", "Tools"]
 post_keywords: "eslint,prettier"
 ---
 

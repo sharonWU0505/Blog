@@ -3,7 +3,7 @@ title: "Notes for React Hooks"
 date: "2020-01-23T09:00:00+08:00"
 draft: false
 slug: "react-hooks"
-tags: ["React", "React Hooks"]
+tags: ["React"]
 post_keywords: "react,react hook,react hooks"
 ---
 

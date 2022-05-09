@@ -3,7 +3,7 @@ title: "Optimize Images for Web Performance"
 date: "2021-01-10T09:00:00+08:00"
 draft: false
 slug: "optimize-images"
-tags: ["Performance", "Optimize Images"]
+tags: ["Performance Optimization"]
 post_keywords: "web performance,optimize images,webp,lazy-loading"
 ---
 
